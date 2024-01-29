@@ -26,7 +26,6 @@ console.log(`La nuestra se llama "${banda2}"`);
 
 console.log(Math.floor(Math.random()))
 
-// EMOCIONES A EMOJI
 
 // GENERADOR DE HISTORIAS ABSURDAS
 
@@ -113,3 +112,34 @@ function crearPlaneta(){
 }
 
 crearPlaneta();
+
+// EMOCIONES A EMOJI
+
+let emociones = ["feliz", "triste", "melancolico","vergüenza", "meh", "aburrido"];
+
+
+function emocionAemoji(emocion){
+    switch (emocion) {
+        case "feliz": 
+            return"😀";
+        case "triste":
+            return "☹️";
+        case "melancolico":
+            return "😔";  
+        case "vergüenza": 
+            return "☺️";  
+        case "meh": 
+            return "😶";  
+        case "aburrido": 
+            return "🥱";  
+        default:
+            break;
+    }
+
+}
+
+let emocionUno = emocionAemoji("feliz");
+console.log(`esta emocion es feliz ${emocionUno}`);
+
+let emocionDos = emocionAemoji("meh");
+console.log(`esta emocion es meh ${emocionDos}`);
